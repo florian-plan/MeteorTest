@@ -1,0 +1,69 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+    background-color:rgba(208,165,126,0.1);
+    color: grey;
+}
+.liste {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding-left: inherit;
+    }
+.liste_li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 550px;
+    margin-bottom: 30px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #C39767;
+    border-radius: 5px;
+}
+.liste_li:hover {
+    background-color: rgba(208,165,126,0.4);
+}
+h1{
+    text-align: center;
+}
+p{
+    min-width: 200px;
+}
+.maj_name,.maj_firstname,#name,#firstname{
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    background-color: rgba(208,165,126,0.1);
+    border-bottom: 2px solid rgba(208,165,126,0.7);
+    font-family: 'Permanent Marker', cursive;
+}
+#submit_maj,#submit_eleve,#remove_eleve{
+    margin-left: 10px;
+    border-radius: 50%;
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(208,165,126,0.1);
+    border: 2px solid grey;
+}
+#submit_maj:hover,#submit_eleve:hover,#remove_eleve:hover{
+    background-color: rgba(208,165,126,0.7);
+    outline: none;
+}
+#name,#firstname{
+    height: 40px;
+    outline: none;
+}
+#submit_eleve{
+    height: 85px;
+    outline: none;
+}
+#form{
+    margin-left: 50px;
+}
+#remove_eleve{
+    height: 70px;
+    outline: none;
+}

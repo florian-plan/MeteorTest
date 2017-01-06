@@ -1,0 +1,30 @@
+<head>
+	<title>Liste</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+<h1>Ajouter des gens That's all</h1>
+
+{{> eleves }}
+</body>
+
+<template name="eleves">
+    <div id="form">
+        <div>Ajoutez quelqu'un :</div>
+        <input id="name" type="text" placeholder="Prénom"/>
+        <input id="firstname" type="text" placeholder="Nom"/>
+        <button id="submit_eleve">Nouvel élève</button>
+    </div>
+	<ul class="liste">
+      {{#each alleleve }}
+		  <li class="liste_li">
+              <input type="checkbox" class="check" checked="{{ checked }}" >
+              <p>{{ name }} {{ firstname }}</p>
+              <input class="maj_name" type="text" placeholder="Prénom"/>
+              <input class="maj_firstname" type="text" placeholder="Nom"/>
+              <button id="submit_maj">éditer</button>
+          </li>
+      {{/each}}
+        <button id="remove_eleve">Supprimer</button>
+	</ul>
+</template>
